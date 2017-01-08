@@ -8,7 +8,7 @@ class Buttons extends Component{
         const style = require('../scss/buttons.scss')
         return (
             <button className="my-button" onClick={this.handleClick.bind(this)}>
-            我是一个按钮
+            我是一个按钮aaaa
             </button>
         )
     }

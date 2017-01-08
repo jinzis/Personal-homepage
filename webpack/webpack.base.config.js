@@ -1,9 +1,9 @@
-var path = require("path");
-var webpack = require("webpack");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var rootPath = path.resolve(__dirname,'..');
-var srcPath = path.join(rootPath,'src');
-var env = process.env.NODE_ENV.trim();
+var path = require("path")
+var webpack = require("webpack")
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var rootPath = path.resolve(__dirname,'..')
+var srcPath = path.join(rootPath,'src')
+var env = process.env.NODE_ENV.trim()
 var commonPath = {
     rootPath: rootPath,
     srcPath: srcPath,
@@ -50,6 +50,9 @@ var config = {
             },
         ]
     },
+    eslint: {
+        configFile: path.join(commonPath.rootPath,'.eslintrc')
+    },
     plugins: [
         new HtmlWebpackPlugin({
             // filename: 'index.html',
@@ -65,4 +68,4 @@ var config = {
    
 }
 
-module.exports = config;
+module.exports = config

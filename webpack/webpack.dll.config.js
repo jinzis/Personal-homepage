@@ -1,7 +1,7 @@
-var webpack = require('webpack');
-var path = require('path');
-var buildPath = path.resolve(__dirname,'../build');
-var dps = require('../package.json').dependencies;
+var webpack = require('webpack')
+var path = require('path')
+var buildPath = path.resolve(__dirname,'../build')
+var dps = require('../package.json').dependencies
 
 module.exports = {
     entry: {

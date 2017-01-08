@@ -1,12 +1,12 @@
-var webpack = require('webpack');
-var config = require('./webpack.base.config.js');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack = require('webpack')
+var config = require('./webpack.base.config.js')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-config.output.filename = '[name].[chunkhash:6].js';
-config.output.chunkFilename = '[id].[chunkhash:6].js';
+config.output.filename = '[name].[chunkhash:6].js'
+config.output.chunkFilename = '[id].[chunkhash:6].js'
 
-config.devtool = 'cheap-source-map';
+config.devtool = 'cheap-source-map'
 
 config.module.loaders.push(
      {
@@ -42,4 +42,4 @@ config.plugins.push(
     })
 )
 
-module.exports = config;
+module.exports = config
