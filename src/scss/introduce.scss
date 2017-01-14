@@ -1,0 +1,15 @@
+@import './_reset.scss';
+
+.introduce{
+    font-size: 0.2rem;
+    text-align: center;
+    .title{
+    font-size: 0.25rem;
+        .name{
+            color: pink;
+        }
+    }
+    .tip{
+        margin-top: 1rem;
+    }
+}

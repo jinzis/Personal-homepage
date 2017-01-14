@@ -19,18 +19,9 @@ config.entry.app = [
     // 'eventsource-polyfill',
     // 'webpack-hot-middleware/client?reload=true',
     'webpack/hot/only-dev-server',
-    'webpack-dev-server/client?http://0.0.0.0:8080',
+    'webpack-dev-server/client?http://0.0.0.0:3000',
     path.join(srcPath, 'index.js'),
 ]
-
-// config.devServer = {
-//     historyApiFallback: true,
-//     hot: true,
-//     inline: true,
-//     contentBase: buildPath,
-//     port: 3000,
-//     stats: {color: true}
-// }
 
 config.module.loaders.push(
     {
