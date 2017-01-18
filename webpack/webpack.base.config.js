@@ -58,6 +58,7 @@ var config = {
             // filename: 'index.html',
             title: 'Home',
             template:commonPath.indexHtml,
+            favicon: path.join(commonPath.srcPath,'favicon.ico'),
             // inject: 'body'
         }),
         new webpack.DefinePlugin({
