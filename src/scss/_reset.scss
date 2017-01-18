@@ -1,0 +1,30 @@
+html,body,p,div,ul{
+    margin: 0;
+    padding:0;
+}
+html,body{
+    width: 100%;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    overflow-x:hidden; 
+}
+html{
+    font-size: 100px;
+}
+body{
+    background: url("../images/bg.png") top center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+
+a:link,a:visited,a:hover,a:active{
+    color:#333;
+}
+
+ul,li{
+    list-style: none;
+}
+img{
+    border: none;
+}

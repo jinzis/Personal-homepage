@@ -1,0 +1,39 @@
+@import '_reset.scss';
+
+.heart{
+    width: 0.2rem;
+    transform-origin: 5% 50% 0;
+    -webkit-transform-origin: 5% 50% 0;
+    -ms-transform-origin: 5% 50% 0;
+    -o-transform-origin: 5% 50% 0;
+    -moz-transform-origin: 5% 50% 0;
+    transform: rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform:rotate(45deg); 
+}
+.body,.body::before,.body::after{
+    height:0.2rem;
+    width: 0.2rem;
+    background-color: pink;
+}
+.body::before,.body::after{
+    display:block;
+    content:"";
+    border-radius: 50%;
+}
+.body::before{
+    transform: translateX(-60%);
+    -webkit-transform:translateX(-60%);
+    -o-transform:translateX(-60%);
+    -ms-transform:translateX(-60%);
+    -moz-transform:translateX(-60%);
+}
+.body::after{
+    transform: translateY(-160%);
+    -webkit-transform:translateY(-160%);
+    -o-transform:translateY(-160%);
+    -ms-transform:translateY(-160%);
+    -moz-transform:translateY(-160%);
+}
