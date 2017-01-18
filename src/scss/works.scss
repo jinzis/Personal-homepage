@@ -1,0 +1,13 @@
+@import './_reset.scss';
+
+.works{
+    font-size: 0.3rem;
+   text-align: center;
+    .demo{
+        margin-bottom: 0.3rem;
+        color: pink;
+    }
+    table{
+        margin: 0 auto;
+    }
+}

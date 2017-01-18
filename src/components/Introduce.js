@@ -11,7 +11,7 @@ class Introduce extends Component{
                     <dt>本网页的技术栈：</dt>
                     <dd>React + JSX + react-router + webpack + Eslint + sass</dd>
                 </dl>
-                <p className="tip">此网页只做简单的project的展示，后期再进行其他内容的添加。</p>
+                <p className="tip">此网页只做简单的works的展示，后期再进行其他内容的添加。</p>
             </div>
         )
     }

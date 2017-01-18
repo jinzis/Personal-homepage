@@ -1,9 +1,16 @@
 @import '_reset.scss';
-
+/*HEADER*/
 header{
     font-size: 0.25rem;
+    height: 0.6rem;
+    line-height: 0.4rem;
+    width: 100%;
     padding: 0.1rem 0.3rem;
-    overflow: hidden;
+    border-bottom: 0.03rem solid #666;
+    box-shadow: 0 0 1px 1px #999;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 0.5rem;
     .logo{
         float:left;
         .left{
@@ -28,25 +35,10 @@ header{
         }
         
     }
-    &::after{
-        display: block;
-        content: '';
-        width: 100%;
-        height: 0.01rem;
-        background-color: #666;
-        margin: 0.7rem auto;
-        box-shadow:0 0 0.05rem #666;
-    }
 }
+/*FOOTER*/
 .mail{
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -o-webkit-transform:translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
+    margin-top: 1rem;
     text-align: center;
     font-size: 0.2rem;
     .mail-icon{
@@ -60,5 +52,72 @@ header{
         font-size: 0.25rem;
         font-weight: bold;
         margin-right: 0.05rem;
+    }
+}
+/*MOBILE*/
+@media screen and (max-width:768px) {
+    header {
+        .logo{
+            float: none;
+            text-align: center;
+        }
+    .nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        float: none;
+        .nav-mobile{
+        display: block;
+        width: 0.57rem;
+        height: 0.57rem;
+        background-color: pink;
+        position: relative;
+        float: right;
+        cursor: pointer;
+            .btn-icon,.btn-icon::before,.btn-icon::after{
+                display:block;
+                width: 0.2rem;
+                height: 0.03rem;
+                position: absolute;
+                left: 50%;
+                margin-left: -0.1rem;
+                top: 0.075rem;
+                background-color:white;
+            }
+            .btn-icon::before,.btn-icon::after{
+                content: "";
+            }
+            .btn-icon{
+                top: 0.19rem;
+            }
+            .btn-icon::after{
+               top: 0.14rem;
+            }
+        }
+        ul{
+           position:relative;
+           top: 0;
+           right: 0;
+           width: 100%;
+           background-color:#666;
+           padding: 0.4rem 0.3rem;
+           box-sizing: border-box;
+           clear: both;
+           li{
+               display: block;
+               text-align: left;
+               border-bottom: 1px dotted pink;
+               padding: 0.05rem;
+               height: auto;
+              &:not(:last-child){
+                  margin-right: 0;
+              }
+              &:first-child{
+                  border-top: 1px dotted pink;
+              }
+           }
+        }
+    }
     }
 }

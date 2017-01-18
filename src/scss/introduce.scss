@@ -1,6 +1,7 @@
 @import './_reset.scss';
 
 .introduce{
+    margin-top: 0.3rem;
     font-size: 0.2rem;
     text-align: center;
     .title{
@@ -11,5 +12,10 @@
     }
     .tip{
         margin-top: 1rem;
+    }
+    .detail{
+        dd{
+            margin-top: 0.1rem;
+        }
     }
 }

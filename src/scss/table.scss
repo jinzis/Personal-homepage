@@ -1,0 +1,19 @@
+@import './_reset.scss';
+
+table{
+    border-collapse: collapse;
+    font-size: 0.2rem;
+    thead th{
+         border-bottom: 1px solid pink;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.15rem;
+    }
+    tbody tr td{
+        border-bottom: 1px solid pink;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.1rem;
+    }
+}
